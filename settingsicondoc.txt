@@ -1,0 +1,23 @@
+How to Create Animated Settings Icon Using HTML and CSS
+The code begins by declaring the document type as HTML
+Inside the HTML document, there is a section called head which contains styling information written in the style tags
+The body of the HTML document begins with a section that sets the background image for the page using a URL
+
+background:https://images.pexels.com/photos/3783524/pexels-photo-3783524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+The content of the body is styled to have a flex display to align items vertically and horizontally, with a specified margin around the
+content
+The main gear animation is structured using a container with a class name parent and a gear element with a class name gear
+The gear itself is a circular shape with a white background color and a specified width, height, and border radius to create the circular 
+shape
+Within the gear, there is a center element represented by a div with the class name center This element has a specific position, size, and 
+background color to create the center part of the gear
+The gear also consists of four teeth elements represented by divs with the class name tooth Each tooth has a specified position, size, and 
+background color to create the teeth of the gear
+Each tooth element is positioned absolutely and rotated using the transform   rotate   deg       property to achieve the gear like 
+appearance
+The animation for the gear spinning is defined using keyframes named spin The animation specifies the rotation of the gear from 0 degrees 
+to 360 degrees continuously
+The animation duration, iteration count, and timing function are also specified within the CSS code
+Overall, the HTML and CSS code work together to create an animated gear spinning effect on the webpage against a background image, 
+giving a visually appealing display

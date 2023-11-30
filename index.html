@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Define the styles for the HTML document -->
+    <style>
+      /* Styling for the body of the document */
+      body {
+        /* Set a background image for the body */
+        background-image: url("https://images.pexels.com/photos/3783524/pexels-photo-3783524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        /* Align content vertically and horizontally */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 50px; /* Set margin around the body */
+      }
+      /* Styling for the gear animation */
+      .parent {
+        display: flex;
+        height: 500px; /* Set the height of the gear container */
+      }
+      .gear {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background: #fff;
+        border-radius: 50%; /* Create a circular shape */
+        animation-name: spin; /* Name of the animation */
+        animation-duration: 4s; /* Duration of the animation */
+        animation-iteration-count: infinite; /* Make the animation repeat infinitely */
+        animation-timing-function: linear; /* Set animation timing function */
+      }
+      /* Styling for the gear center */
+      .gear .center {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+        background-color: #7C2130; /* Set the color for the center of the gear */
+        background-clip: padding-box;
+        border-radius: 50%; /* Create a circular shape for the center */
+      }
+      /* Styling for the gear teeth */
+      .tooth {
+        position: absolute;
+        top: -25px;
+        left: 75px;
+        z-index: 1;
+        width: 45px;
+        height: 250px;
+        background: #fff; /* Set the color of the gear teeth */
+      }
+      /* Rotate each gear tooth for the gear effect */
+      .tooth:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      .tooth:nth-child(3) {
+        transform: rotate(90deg);
+      }
+      .tooth:nth-child(4) {
+        transform: rotate(135deg);
+      }
+      /* Define the animation for gear spinning */
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create a container for the gear -->
+    <div class="parent">
+      <!-- Gear structure with center and teeth -->
+      <div class="gear">
+        <div class="center"></div> <!-- Center of the gear -->
+        <!-- Gear teeth -->
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>
+    </div>
+  </body>
+</html>
+

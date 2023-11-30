@@ -1,0 +1,1 @@
+<img src="settingsIcon.PNG" alt="settingsIcon">
